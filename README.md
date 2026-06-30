@@ -5,6 +5,11 @@ Mini-Program Server SDK
 
 ## wx-server-sdk 更新日志
 
+### 4.0.1
+
+1. @cloudbase/node-sdk 2.10.0 -> 3.17.2
+2. 3.0.5-beta.1的改动
+
 ### 2.7.0
 
 1. `U` 更新 `@cloudbase/node-sdk` 到 `2.10.0`

@@ -1,5 +1,8 @@
 ## wx-server-sdk 更新日志
 
+### 4.0.2
+1. `F` 修复 npm 包中误包含 `.github` CI 配置文件的问题
+
 ### 4.0.1
 1. @cloudbase/node-sdk 2.10.0 -> 3.17.2
 2. 3.0.5-beta.1的改动

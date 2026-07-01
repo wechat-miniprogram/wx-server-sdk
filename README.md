@@ -10,6 +10,9 @@ Mini-Program Server SDK
 1. @cloudbase/node-sdk 2.10.0 -> 3.17.2
 2. 3.0.5-beta.1的改动
 
+### 3.0.5-beta.1
+1. `U` 新增 `ai` 相关接口
+
 ### 2.7.0
 
 1. `U` 更新 `@cloudbase/node-sdk` 到 `2.10.0`

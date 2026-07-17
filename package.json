@@ -1,6 +1,6 @@
 {
   "name": "wx-server-sdk",
-  "version": "4.0.2",
+  "version": "4.0.3-beta.1",
   "description": "mini program cloud server sdk",
   "homepage": "https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html",
   "main": "index.js",
@@ -8,7 +8,7 @@
   "license": "MIT",
   "types": "index.d.ts",
   "dependencies": {
-    "@cloudbase/node-sdk": "3.17.2",
+    "@cloudbase/node-sdk": "3.18.5",
     "json-bigint": "^1.0.0",
     "protobufjs": "^7.2.4",
     "tslib": "^1.9.3"

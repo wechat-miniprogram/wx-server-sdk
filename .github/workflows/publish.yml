@@ -5,6 +5,7 @@
 # bound to this repository and this workflow file (publish.yml).
 #
 # Trigger: only when a v* tag is pushed.
+# Dist-tag: stable versions → latest; prerelease (e.g. 4.0.3-beta.1) → beta.
 name: Publish Package to npmjs
 
 on:
@@ -35,4 +36,13 @@ jobs:
           npm --version
 
       - name: Publish to npm with provenance
-        run: npm publish --provenance --access public
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo "Publishing version: $VERSION"
+          if [[ "$VERSION" == *-* ]]; then
+            echo "Prerelease detected → npm dist-tag: beta"
+            npm publish --provenance --access public --tag beta
+          else
+            echo "Stable release → npm dist-tag: latest"
+            npm publish --provenance --access public
+          fi
